@@ -1,0 +1,143 @@
+body {
+    background-color: hwb(0 41% 59%);
+    color: rgb(145, 10, 10);
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+body ::before{
+    content: "";
+    position: absolute;
+    background-image: url('images/background.png.png');
+    background-position: center;
+    background-size:100px;
+    background-position: center;
+    background-repeat: repeat;
+    filter: blur(5px);
+    opacity: 0.5;
+    z-index: 0;
+}
+.page1 {
+    margin-top: 250px;
+}
+#page2 {
+    margin-top: 100px;
+}
+#loupCards {
+    margin-top: 100px;
+    display: grid;
+    
+}
+#loupCards div {
+margin-bottom: 50px;    
+}
+#roleCards div {
+    margin-bottom: 50px;    
+    }
+#role {
+    font-size: 1.4em;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    
+}
+#role p {
+    color: black;
+    
+}
+
+#page3 {
+
+    margin-top: 100px;
+}
+
+#set {
+    margin-top: 250px;
+}
+#endgame {
+    
+    margin-top: 250px;
+}
+
+input {
+    height: 25px;
+}
+
+.continue {
+    display: inline-block;
+    font-size: 1.3em;
+    padding: 10px 20px;
+    background-color: antiquewhite;
+    color :black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.continue:hover {
+    color: white;
+    background-color: rgb(145, 10, 10);
+    cursor: pointer;
+}
+
+
+
+.page2 {
+    margin-top: 1em;
+
+
+}
+
+#decla {
+    font-size: 0.5em;
+}
+.subtext{
+    font-size: 1.5em;
+
+}
+#nbrLoupIn{
+    width: 100px;
+    height: 70px;
+    font-size: 5em;
+    margin: 0.5em;
+}
+#advicedLoup {
+    color: black;
+    font-size: 1.2em;
+}
+#advicedrole {
+    color: black;
+    font-size: 1.2em;
+}
+button {
+    font-size: 1.3em;
+    padding: 10px 20px;
+    background-color: antiquewhite;
+    color :black;
+    border-radius: 5px;
+}
+img {
+    width: 250px;
+    height: 350px;
+	border-radius: 20px;
+    align-self: center;
+}
+.roles {
+    font-size: 1.8em;
+}
+#advicedrole {
+    color: antiquewhite;
+    font-size: 1.2em;
+}
+
+.title {
+    font-size: 3em;
+}
+.checkbox {
+    width: 4em;
+    height: 4em;
+    margin: 1em;
+    border-radius: 5em;
+}
+.checkbox:checked{
+    color: rgb(78, 230, 78);
+}

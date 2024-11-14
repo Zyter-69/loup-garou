@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loup Garou</title>
+    <link rel="stylesheet" href="asset/page1.css">
+</head>
+<body>
+    <div class ="page1" id ="page1">
+    <h1 id = "askingNumberPlayers">What's the number of players ?</h1>
+    <p id="warning" style="color: red; display: none;">number of players cannot be less then 8</p>
+    <input id="nbrPlayer" type="number">
+    <br></br>
+    <a class ="continue" id="bt">submit</a>    
+    </div>
+    <div id="page2" style="display: none;">
+        <h1 id="Decla">The number of players is </h1>
+        <h2 class="subtext">how many loup do you want to add ? <br>(not including special loup)</h2>
+        <input id = "nbrLoupIn" >
+        <br>
+        <button id="dec">-</button>
+        <button id="add">+</button>
+        <p id="advicedLoup">its adviced to have </p>
+        <button id="sumbit" >done</button>
+    </div>
+    <div style="display: none;" id="loupCards">
+        
+        <div id="loupNoire">
+        <h2  class="title"  >Loup noire</h2>
+        <img src="asset/images/loupNoire.png" alt="loup noire">
+        <br>
+        <input class="checkbox" type="checkbox" id="yepNoire">
+        </div>
+        <div id="loupBlue">
+        <h2 class="title">Loup blue</h2>
+        <img src="asset/images/loupBlue.png" alt="loup blue">
+        <br>
+        <input class="checkbox" type="checkbox" id="yepBlue">
+        </div>
+        <div id="loupVioant">
+            <h2  class="title">Loup vioant</h2>
+            <img src="asset/images/LoupVoyant.png" alt="loup vioant">
+            <br>
+            <input class="checkbox" type="checkbox" id="yepLvioant">
+            </div>
+            <div id="enfant">
+                <h2 class="title">Enfant souvage</h2>
+                <img src="asset/images/enfant.png" alt="enfant">
+                <br>
+                <input class="checkbox" type="checkbox" id="yepEnfant">
+                </div>
+        <div id="loupInfected">
+        <h2 class="title">Loup infected</h2>
+        <img src="asset/images/infected.png" alt="loup infected">
+        <br>
+        <input class="checkbox" type="checkbox" id="yepInfected">
+        </div>
+        <button id="checkChecksLoup">done</button>
+    </div>
+    <div id="page3" style="display: none;">
+        <h2 class="roles">Adding the roles !</h2>
+        <p id="advicedrole">its adviced to have </p>
+        <div id="roleCards">
+            <div id="vioant">
+            <h2  class="title" >Vioant</h2>
+            <img src="asset/images/vioant.png" alt="vioant">
+            <br>
+            <input class="checkbox" type="checkbox" id="yepVioant">
+            </div>
+            <div id="salva">
+                <h2  class="title" >Salva</h2>
+                <img src="asset/images/salva.png" alt="salva">
+                <br>
+                <input class="checkbox" type="checkbox" id="yepSalva">
+                </div>
+                <div id="chasseur">
+                    <h2  class="title" >Chasseur</h2>
+                    <img class="checkbox" src="asset/images/chasseure.png" alt="chasseur">
+                    <br>
+                    <input type="checkbox" id="yepChasseur">
+                    </div>
+                <div id="voleur">
+                        <h2  class="title" >Voleur</h2>
+                        <img src="asset/images/voleur.webp" alt="voleur">
+                        <br>
+                        <input class="checkbox" type="checkbox" id="yepVoleur">
+                </div>
+                <div id="corbeau">
+                    <h2  class="title" >Corbeau</h2>
+                    <img src="asset/images/corbeau.webp" alt="corbeau">
+                    <br>
+                    <input class="checkbox" type="checkbox" id="yepCorbeau">
+            </div>
+            <div id="cubident">
+                <h2  class="title" >Cubident</h2>
+                <img src="asset/images/cubident.png" alt="cubident">
+                <br>
+                <input type="checkbox" id="yepCubident">
+        </div>
+                <div id="sorcier">
+                    <h2 class="title"  >Sorcier</h2>
+                    <img src="asset/images/sorciers.png" alt="sorcier">
+                    <br>
+                    <input class="checkbox" type="checkbox" id="yepSorcier">
+                    </div>
+         </div>
+         <button id="checkChecksRole">done</button>
+        </div>
+    <div id = "page4" style="display: none;" >
+        <div id="set" >
+        <h1>chosse a random person and give him the phone</h1>
+        <button id="setBt">done</button>
+        </div>
+        <div id="dist" style="display: none;">
+            <h1>make sure no one see's your role</h1>
+            <img src="asset/images/nosee.png" class="noSee" style="display: inline-block; align-items: center; ">
+            <br>
+            <button id="readyBt">ready</button>
+        </div>
+                <div id="role" style="display: none;">
+                    <h1 id="roleName">
+                    </h1>
+                    <img id="svim" style="display: none;" src="asset/images/sv.png" alt="sv">
+                    <img id="loupim" style="display: none;" src="asset/images/image1.png" alt="loup">
+                    <img id="infectedim" style="display: none;" src="asset/images/infected.png" alt="loup infected">
+                    <img id="blueim" style="display: none;" src="asset/images/loupBlue.png" alt="loup blue">
+                    <img id="noireim" style="display: none;" src="asset/images/loupNoire.png" alt="loup noire">
+                    <img id="loupvioantim" style="display: none;" src="asset/images/LoupVoyant.png" alt="loupVioant">
+                    <img id="enfantim" style="display: none;" src="asset/images/enfant.png" alt="enfant">
+                    <img id="salvaim" style="display: none;" src="asset/images/salva.png" alt="salva">
+                    <img id="vioantim" style="display: none;" src="asset/images/vioant.png" alt="vioant">
+                    <img id="sorcierim" style="display: none;" src="asset/images/sorciers.png" alt="sorcier">
+                    <img id="chasseurim" style="display: none;" src="asset/images/chasseure.png" alt="chasseure">
+                    <img id="voleurim" style="display: none;" src="asset/images/voleur.webp" alt="voleur">
+                    <img id="corbeauim" style="display: none;" src="asset/images/corbeau.webp" alt="corbeau">
+                    <img id="cubidentim" style="display: none;" src="asset/images/cubident.png" alt="cubident">
+                    
+
+
+                    <p id="roleloup" style="display: none;">Peut se réunir la nuit avec les autres loups afin d'éliminer un villagois.<br>a9tol el chabiba</p>
+                    <p id="rolenoire" style="display: none;">in the night you can chosse someone to mute them for the next day<br>f lil khyr wa7ed yskot fl debat taeo</p>
+                    <p id="roleblue" style="display: none;">the vioant see's you as an simple villagios<br>vioant matchofkch loup</p>
+                    <p id="roleinfected" style="display: none;">Parmi les loups, il peut infecter la victime une fois dans la partie.<br>t9dr tkhyr mra w7da kchw7d mn jeux ywli loup m3akom</p>
+                    <p id="rolesalva" style="display: none;">Chaque nuit, le salvateur protège une personne. Cette personne sera protégée et ne pourra donc pas mourir durant la nuit. Le salvateur ne peut pas protéger la même personne deux nuits de suite.<br>khir wa7ed maymotch f lil (mat9drch tkhyr nfs bnadem 2 lyali mor b3dahom)</p>
+                    <p id="rolesorcier" style="display: none;">La sorcière possède deux potions : une de guérison et une d'empoisonnement. Elle ne peut utiliser chacune de ses potions qu'une seule fois au cours de la partie. Durant la nuit, lorsque les loups-garous se sont rendormis, le meneur de jeu va appeler la sorcière et va lui montrer la personne tuée par les loups-garous.
+
+                        La sorcière a trois possibilités :
+                        
+                        ressusciter la personne tuée et donc perdre sa seule potion de guérison ;
+                        tuer une autre personne en plus de la victime et donc perdre sa seule potion d'empoisonnement.
+                        ne rien faire
+                        La sorcière peut utiliser ses deux potions durant la même nuit si elle le souhaite.<br>s9sini nfhmek</p>
+                    <p id="rolevioant" style="display: none;">Chaque nuit la voyante est appelée par le maître du jeu et peut découvrir la carte d'un joueur. La voyante est un des personnages les plus puissants dans le camp du village. Elle pourra facilement identifier des joueurs en qui elle pourra avoir confiance, mais surtout l'identité de ses ennemis.<br>f lil t9dr tkhy kch wa7ed bah tchof asque loup</p>
+                    <p id="rolesv" style="display: none;">Le villageois est un personnage qui incarne l'habitant basique d'un village. Son rôle est de découvrir l'identité des loups-garous et de les éliminer avant qu'ils ne tuent tous les villageois. Il gagne lors ce que tous les loups garous sont morts.
+
+                        Le villageois n'a aucun pouvoir spécial, si ce n'est de voter au conseil du village contre celui qu'il suspecte être loup garou.<br>syi ajbed les loup 9bel matmot</p>
+                    <p id="rolechasseur" style="display: none;">A sa mort peut tuer un joueur de son choix<br>ki tmot adi m3ak wa7d</p>
+                    <p id="rolecorbeau" style="display: none;">Il rajoute 2 votes supplémentaire au joueur de son choix.<br>khyr kch wa7ed f lil ynod b 2 vote</p>
+                    <p id="rolecubident" style="display: none;">Cupidon est appelé uniquement la première nuit afin d'unir un couple. Le Meneur de jeu le contacte le moment venu, puis cupidon désigne deux noms parmi les joueurs. Ces deux personnes seront les amoureux. Si un des deux qui sont en couple meurt, l'autre meurt avec son amant. Pour ce faire, cupidon choisi deux personnes, elles sont alors prévenues, et découvrent avec qui elles sont désormais marié.<br>khyr zoj f nuit lwla ywlo yleabo kif kif wmy9droch y voter ela b3dahom</p>
+                    <p id="rolevoleur" style="display: none;">Il peut changer sa carte avec une autre.<br>nlaeboh en dirait dobleur donc t9dr t copier role tae kach wa7ed</p>
+                    <p id="rolelvioant" style="display: none;">Il peut, chaque nuit, découvrir la carte du joueur de son choix, avec ses compères loups, ce qui peut les aider à choisir leur victime.<br>chof f lil kch role</p>
+                    <p id="roleenfant" style="display: none;">Au début de la partie, l'enfant sauvage choisit un mentor. Ce joueur ignore qu'il est le mentor de l'enfant sauvage. Si, au cours de la partie, le mentor vient à mourir, alors l'enfant sauvage devient un loup-garou.<br>khyr wa7ed ki ymot twli loup </p>
+                    <p style="font-size: 1.7em; color: rgb(66, 6, 122);" >pass the phone the person next to your right</p>
+                    <button id="okayBt">okay</button>
+            
+                </div>
+    </div>
+    <div id="endPage" style="display: none;">
+        <h1>have a good game</h1>
+
+    </div>
+
+
+    <script src ="app1.js"></script>
+</body>
+</html>
